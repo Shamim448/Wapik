@@ -1,0 +1,68 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+nav .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+nav .navbar-brand span {
+  border-right: 1px #ffffff solid;
+  padding-right: 20px;
+}
+
+nav .navbar-brand a {
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+nav .navbar-brand a:last-child {
+  padding-right: 0px;
+  color: #ffffff;
+}
+
+nav .navbar-brand a:last-child:hover {
+  text-decoration: none;
+}
+
+nav button {
+  background: #6d807f;
+  color: #fff !important;
+}
+
+#hero-area {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 61, 61, 0.9)), to(rgba(41, 99, 101, 0.7))), url(../img/Home.jpg) center/cover no-repeat fixed;
+  background: linear-gradient(rgba(31, 61, 61, 0.9), rgba(41, 99, 101, 0.7)), url(../img/Home.jpg) center/cover no-repeat fixed;
+  min-height: 72vh;
+}
+
+#hero-area .hero-text button {
+  background: #6fb048;
+  border-color: #6fb048;
+  border-radius: 2px;
+  padding: 13px 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#hero-area .hero-text button:hover {
+  background: #fff;
+  border-color: #fff;
+  border-radius: 2px;
+  padding: 13px 0;
+  color: #6fb048;
+}
+
+@media (max-width: 991px) {
+  nav .border-bottom {
+    border: 0 !important;
+  }
+  nav button {
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
