@@ -26,71 +26,70 @@
 
   <body>
     <!-- navigation Start -->
+    <header id="my-nav">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+        <div class="container border-bottom py-3">
+          <div class="navbar-brand">
+            <a href="#"
+              ><img
+                class="img-fluid"
+                src="assets/img/logo.png"
+                alt="wapik"
+              /><span></span>
+            </a>
+            <a href="tel:+62 202 555 0117"
+              ><i class="fas fa-phone-alt"></i> +62 202 555 0117</a
+            >
+          </div>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
-      <div class="container border-bottom py-3">
-        <div class="navbar-brand">
-          <a href="#"
-            ><img
-              class="img-fluid"
-              src="assets/img/logo.png"
-              alt="wapik"
-            /><span></span>
-          </a>
-          <a href="tel:+62 202 555 0117"
-            ><i class="fas fa-phone-alt"></i> +62 202 555 0117</a
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto text-uppercase">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">contact us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><button type="button" class="btn px-2 text-uppercase">
+                    get started
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ml-auto text-uppercase">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">about us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">contact us</a>
-            </li>
-            <li class="nav-item">
-              <button type="button" class="nav-link btn px-2 text-uppercase">
-                get started
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
     <!-- Navigation END -->
 
     <!-- Hero area start -->
-    <section
-      id="hero-area"
-      class=" d-flex align-items-center justify-content-start"
-    >
+    <section id="hero-area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 hero-text pt-5 ">
-            <h1 class="pt-5">Welcome to Wapik</h1>
-            <p class="lead">
+          <div class="hero-text">
+            <h1>Welcome to Wapik</h1>
+            <p>
               Wapik is multipurpose template, with modern and smart design.
               Wapik is perfect template for you!
             </p>
@@ -106,12 +105,111 @@
     </section>
     <!-- Hero area end -->
     <!-- Feature Section Start -->
-    <section id="feature-section">
-      
+    <section id="feature-section" class="text-center my-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="feature-title">
+              <h1>Best of our features</h1>
+              <span></span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante venenatis dapibus posuere velit aliquet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature-services -->
+        <div class="row">
+          <div class="col-md-4">
+            <article class="py-4">
+              <img src="assets/img/icon_1.png" alt="" class="img-fluid" />
+              <h3>Ionicons</h3>
+              <p>
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                auctor. Aenean eu leo quam. Pellentesque ornare sem.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="py-4">
+              <img src="assets/img/icon_2.png" alt="" class="img-fluid" />
+              <h3>Creative Design</h3>
+              <p>
+                Maecenas faucibus mollis interdum. Praesent commodo cursus
+                magna, vel scelerisque nisl consectetur et.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="py-4">
+              <img src="assets/img/icon_3.png" alt="" class="img-fluid" />
+              <h3>Photoshop and Sketch</h3>
+              <p>
+                Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+              </p>
+            </article>
+          </div>
+        </div>
+        <!-- Horizontal & Verticale line -->
+        <div class="row">
+          <div class="col h-v-style">
+            <span class="Horizontally"></span>
+            <span class="vartically"></span>
+          </div>
+        </div>
+        <!-- services-feature -->
+        <div class="row">
+          <div class="col-md-6">
+            <article class="py-5 services-feature ">
+              <h3>
+                <i class="fas fa-globe fa-3x"></i> Cross Browser Compatibility
+              </h3>
+              <p>
+                Donec ullamcorper nulla non metus auctor fringilla. Donec id
+                elit non mi porta gravida at eget metus.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="py-5 services-feature ">
+              <h3><i class="far fa-lightbulb fa-3x"></i> Creative Idea</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum id ligula porta felis euismod semper.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="py-5 services-feature ">
+              <h3><i class="fas fa-magic fa-3x"></i> Pixel Perfect</h3>
+              <p>
+                Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="py-5 services-feature ">
+              <h3>
+                <i class="fas fa-cloud-download-alt fa-3x"></i> Free Forever and
+                Ever
+              </h3>
+              <p>
+                Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                Donec id elit non mi porta gravida at eget metus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Feature Section End -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
