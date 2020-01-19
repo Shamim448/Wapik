@@ -21,16 +21,28 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link rel="stylesheet" href="assets/css/navbar-fixed.css" />
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
+    <!-- preloader -->
+    <div id="preloader" style="display: none;">
+      <div id="status" style="display: none;">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <!-- preloader end -->
     <!-- navigation Start -->
     <header id="my-nav">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
         <div class="container border-bottom py-3">
-          <div class="navbar-brand">
+          <div class="navbar-brand wow fadeInLeft" data-wow-delay=".3s">
             <a href="#"
               ><img
                 class="img-fluid"
@@ -54,7 +66,11 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarNav">
+          <div
+            class="collapse navbar-collapse wow fadeInRight"
+            data-wow-delay=".3s"
+            id="navbarNav"
+          >
             <ul class="navbar-nav ml-auto text-uppercase">
               <li class="nav-item active">
                 <a class="nav-link" href="#hero-area"
@@ -71,8 +87,11 @@
                 <a class="nav-link " href="#">contact us</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link"
-                  ><button type="button" class="btn px-2 text-uppercase">
+                <a href="#" class=""
+                  ><button
+                    type="button"
+                    class="btn px-2 text-uppercase nav-link"
+                  >
                     get started
                   </button></a
                 >
@@ -85,18 +104,21 @@
     <!-- Navigation END -->
 
     <!-- Hero area start -->
-    <section id="hero-area">
+    <section id="hero-area" class="wow fadeIn" data-wow-delay=".1s">
       <div class="container">
         <div class="row">
           <div class="hero-text">
-            <h1>Welcome to Wapik</h1>
-            <p>
+            <h1 class=" wow slideInRight " data-wow-delay=".3s">
+              Welcome to Wapik
+            </h1>
+            <p class=" wow slideInRight " data-wow-delay=".3s">
               Wapik is multipurpose template, with modern and smart design.
               Wapik is perfect template for you!
             </p>
             <button
               type="button"
-              class="btn btn-primary my-button btn-lg px-5 text-uppercase"
+              class="btn btn-primary my-button btn-lg px-5 text-uppercase wow slideInLeft"
+              data-wow-delay=".3s"
             >
               learn more
             </button>
@@ -105,12 +127,17 @@
       </div>
     </section>
     <!-- Hero area end -->
+
     <!-- Feature Section Start -->
-    <section id="feature-section" class="text-center my-5 py-5">
+    <section
+      id="feature-section"
+      class="text-center my-5 py-5 wow fadeIn"
+      data-wow-delay=".1s"
+    >
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="feature-title">
+            <div class="feature-title wow zoomIn" data-wow-delay=".3s">
               <h1>Best of our features</h1>
               <span></span>
               <p>
@@ -123,7 +150,7 @@
         <!-- Feature-services -->
         <div class="row">
           <div class="col-md-4">
-            <article class="py-4">
+            <article class="py-4 wow fadeInLeft" data-wow-delay=".1s">
               <img src="assets/img/icon_1.png" alt="" class="img-fluid" />
               <h3>Ionicons</h3>
               <p>
@@ -133,7 +160,7 @@
             </article>
           </div>
           <div class="col-md-4">
-            <article class="py-4">
+            <article class="py-4 wow fadeInLeft" data-wow-delay=".2s">
               <img src="assets/img/icon_2.png" alt="" class="img-fluid" />
               <h3>Creative Design</h3>
               <p>
@@ -143,7 +170,7 @@
             </article>
           </div>
           <div class="col-md-4">
-            <article class="py-4">
+            <article class="py-4 wow fadeInLeft" data-wow-delay=".3s">
               <img src="assets/img/icon_3.png" alt="" class="img-fluid" />
               <h3>Photoshop and Sketch</h3>
               <p>
@@ -163,7 +190,10 @@
         <!-- services-feature -->
         <div class="row">
           <div class="col-md-6">
-            <article class="py-5 services-feature ">
+            <article
+              class="py-5 services-feature wow fadeInLeft"
+              data-wow-delay=".2s"
+            >
               <h3>
                 <i class="fas fa-globe fa-3x"></i> Cross Browser Compatibility
               </h3>
@@ -174,7 +204,10 @@
             </article>
           </div>
           <div class="col-md-6">
-            <article class="py-5 services-feature ">
+            <article
+              class="py-5 services-feature wow fadeInLeft"
+              data-wow-delay=".2s"
+            >
               <h3><i class="far fa-lightbulb fa-3x"></i> Creative Idea</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -183,7 +216,10 @@
             </article>
           </div>
           <div class="col-md-6">
-            <article class="py-5 services-feature ">
+            <article
+              class="py-5 services-feature wow fadeInRight"
+              data-wow-delay=".3s"
+            >
               <h3><i class="fas fa-magic fa-3x"></i> Pixel Perfect</h3>
               <p>
                 Integer posuere erat a ante venenatis dapibus posuere velit
@@ -193,7 +229,10 @@
             </article>
           </div>
           <div class="col-md-6">
-            <article class="py-5 services-feature ">
+            <article
+              class="py-5 services-feature wow fadeInRight"
+              data-wow-delay=".3s"
+            >
               <h3>
                 <i class="fas fa-cloud-download-alt fa-3x"></i> Free Forever and
                 Ever
@@ -208,10 +247,63 @@
       </div>
     </section>
     <!-- Feature Section End -->
+
+    <!-- project-template-section start-->
+    <section id="project-template" class="fadeIn wow" data-wow-delay=".1s">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="template-title wow zoomIn" data-wow-delay=".3s">
+              <h1>Looking for the perfect template to use?</h1>
+              <span></span>
+              <p>
+                Donec id elit non mi porta gravida at eget metus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-5 wow fadeInUp" data-wow-delay=".3s">
+            <img src="assets/img/hand.png" alt="template" class="img-fluid" />
+          </div>
+          <div class="col-lg-6 col-md-7">
+            <div class="right-side wow fadeInDown" data-wow-delay=".3s">
+              <h1>Responsive Ready</h1>
+              <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet risus.
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed
+                diam eget risus varius blandit sit amet non magna. Vestibulum id
+                ligula porta felis euismod semper.
+              </p>
+              <p>
+                <i class="far fa-check-circle"></i
+                ><span
+                  >Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet.</span
+                >
+              </p>
+              <p>
+                <i class="far fa-check-circle"></i
+                ><span>Donec id elit non mi porta gravida at eget metus.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project-template-section end -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/navbar-fixed.js"></script>
+
     <script src="assets/js/script.js"></script>
+    <!-- Use foe wow js plugin content in style Start-->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
